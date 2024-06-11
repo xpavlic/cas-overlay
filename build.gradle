@@ -286,6 +286,10 @@ dependencies {
     implementation "org.apereo.cas:cas-server-support-webauthn"
     implementation "org.apereo.cas:cas-server-support-yubikey"
     implementation "org.apereo.cas:cas-server-core-logging"
+    implementation "org.apereo.cas:cas-server-core-webflow"
+    implementation "org.apereo.cas:cas-server-core-webflow-api"
+    implementation "org.apereo.cas:cas-server-core-web"
+    implementation "org.apereo.cas:cas-server-core-web-api"
 
     
     testImplementation "org.springframework.boot:spring-boot-starter-test"
