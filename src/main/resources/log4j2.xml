@@ -14,7 +14,7 @@ Set -Dlog4j2.contextSelector=org.apache.logging.log4j.core.selector.BasicContext
         <Property name="spring.web.log.level">warn</Property>
         <Property name="spring.boot.log.level">warn</Property>
         <Property name="ldap.log.level">warn</Property>
-        <Property name="pac4j.log.level">warn</Property>
+        <Property name="pac4j.log.level">debug</Property>
         <Property name="opensaml.log.level">warn</Property>
         <Property name="hazelcast.log.level">warn</Property>
         <Property name="jdbc.log.level">warn</Property>
@@ -104,6 +104,7 @@ Set -Dlog4j2.contextSelector=org.apache.logging.log4j.core.selector.BasicContext
         <Logger name="org.apereo.services.persondir" level="${sys:cas.log.level}" />
         <Logger name="org.apereo.cas.web.flow" level="${sys:cas.log.level}" />
         <Logger name="org.apereo.cas.web.CasWebApplication" level="${sys:cas.log.level}"/>
+        <Logger name="org.apereo.cas.web.flow.controller" level="debug"/>
 
         <Logger name="org.apereo.inspektr" additivity="false" level="info">
             <AppenderRef ref="casConsole"/>
